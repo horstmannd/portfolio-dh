@@ -1,0 +1,105 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.65; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Catamaran", sans-serif;
+  line-height: 1;
+  margin-bottom: .5em; }
+  h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+    margin-top: 0; }
+
+p {
+  margin-top: 0; }
+
+html, body {
+  height: 100vh; }
+
+body {
+  display: grid;
+  margin: 0;
+  grid-template: "header" auto "hero" auto "main" 1fr "footer" auto / 1fr; }
+
+#header {
+  grid-area: header; }
+
+#hero {
+  grid-area: hero; }
+
+#main {
+  grid-area: main; }
+
+#footer {
+  grid-area: footer; }
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 1rem; }
+
+#header {
+  background-color: dodgerblue;
+  color: white; }
+  #header > .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between; }
+    #header > .container h1 {
+      color: mintcream;
+      font-size: 1.25rem;
+      margin: 0;
+      position: relative;
+      text-transform: uppercase;
+      top: 3px; }
+      #header > .container h1 .title {
+        font-size: .75rem;
+        font-weight: 400; }
+    #header > .container nav {
+      display: flex; }
+      #header > .container nav a {
+        color: lightyellow;
+        padding: .25rem 1rem;
+        position: relative;
+        text-decoration: none; }
+        #header > .container nav a:hover {
+          color: lime; }
+          #header > .container nav a:hover:after {
+            background: pink; }
+        #header > .container nav a:after {
+          background: lime;
+          bottom: 0;
+          content: "";
+          height: 1px;
+          left: 0;
+          position: absolute;
+          width: 100%; }
+
+#hero {
+  background-image: url("space_1400.53d1283a.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  height: 400px; }
+  #hero .home {
+    align-items: center;
+    display: flex;
+    height: 100%; }
+    #hero .home .bio-pic {
+      border: 3px solid aquamarine;
+      border-radius: 50%;
+      height: 215px;
+      width: auto; }
+
+#main {
+  margin-top: 1rem; }
+
+#footer {
+  background-color: lightgray; }

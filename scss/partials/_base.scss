@@ -1,0 +1,27 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $body-font;
+  line-height: 1.65;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headline-font;
+  line-height: 1;
+  margin-bottom: .5em;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+p {
+  margin-top: 0;
+}

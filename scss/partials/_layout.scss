@@ -1,0 +1,42 @@
+// Layout and spacing styles
+
+html, body {
+  height: 100vh;
+}
+
+body {
+  display: grid;
+  margin: 0;
+  grid-template:
+    "header" auto
+    "hero" auto
+    "main" 1fr
+    "footer" auto / 1fr;
+}
+
+// body > * {
+//   padding: 1rem;
+// }
+
+#header {
+  grid-area: header;
+}
+
+#hero {
+  grid-area: hero;
+}
+
+#main {
+  grid-area: main;
+}
+
+#footer {
+  grid-area: footer;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 1rem;
+}
+
